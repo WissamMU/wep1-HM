@@ -4,10 +4,17 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: Cairo-Bold;
+  src: url("../fonts/Cairo-Bold.ttf");
+}
+
 :root {
   --main-color: #2196f3;
   --main-color-alt: #1787e0;
   --background-color: #eee;
+  --background-color-mid: #E3E3E3;
+  --background-color-heavy: #B4B4B8;
   --transition-delay: 0.5s;
   --padding-top-bottom: 100px 0;
 }
@@ -18,27 +25,230 @@ html {
 
 body {
   font-family: "Cairo-Bold", sans-serif;
+  background-color: var(--background-color);
 }
 
-a {
+
+
+/* navbar */
+.navbar {
+  background-color: var(--background-color);
+}
+
+.navbar a,
+.navbar i {
   text-decoration: none;
 }
 
-i {
-  text-decoration: none;
-}
 
-ul {
+.navbar ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.logo {
+.navbar .logo {
   color: var(--main-color);
   font-size: 24px;
   font-weight: bolder;
 }
 
+.navbar .nav-item .active {
+  background-color: var(--background-color-mid);
+  color: var(--main-color);
+  border-radius: 10px;
+}
 
-/* tessssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssst sdfalkfalkjfdsla;kjf;ldkasjfdljk;sdaflokjfsdaljk;fsdaljk;fsdaljk;fsdalk;j */
+.navbar .nav-item :hover {
+  color: var(--main-color);
+}
+
+/* slider */
+.carousel-container {
+  background-color: var(--background-color-mid);
+}
+
+.carousel-container .carousel-caption {
+  background-color: var(--background-color);
+  color: var(--main-color);
+  border-radius: 10px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.carousel-container .carousel-control-next {
+  right: 95%;
+}
+
+.carousel-container .carousel-control-prev {
+  left: 95%;
+  right: auto;
+}
+
+.carousel-container .carousel-control-prev,
+.carousel-container .carousel-control-next {
+  color: var(--main-color);
+}
+
+/* categories */
+
+.categories-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.categorie-container {
+  display: flex;
+  justify-content: center;
+}
+
+.categorie {
+  aspect-ratio: 1/1;
+  width: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border-radius: 50%;
+  border: 2px solid #333;
+  background-color: transparent;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.categorie i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.categorie span {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Music */
+#music {
+  border-color: #CDC1FF;
+}
+#music i {
+  color: #CDC1FF;
+}
+#music:hover,
+#music.active {
+  background-color: #CDC1FF;
+  border-radius: 50%;
+}
+#music:hover i,
+#music.active i {
+  color: blue;
+}
+
+/* Culture */
+#culture {
+  border-color: #9DC08B;
+}
+#culture i {
+  color: #9DC08B;
+}
+#culture:hover,
+#culture.active {
+  background-color: #9DC08B;
+  border-radius: 50%;
+}
+#culture:hover i,
+#culture.active i {
+  color: #68edcb;
+}
+
+/* Sport */
+#sport {
+  border-color: #E84545;
+}
+#sport i {
+  color: #E84545;
+}
+#sport:hover,
+#sport.active {
+  background-color: #E84545;
+  border-radius: 50%;
+}
+#sport:hover i,
+#sport.active i {
+  color: #ffced9;
+}
+
+/* Family */
+#family {
+  border-color: #b0d0ff;
+}
+#family i {
+  color: #b0d0ff;
+}
+#family:hover,
+#family.active {
+  background-color: #b0d0ff;
+  border-radius: 50%;
+}
+#family:hover i,
+#family.active i {
+  color: #205295;
+}
+
+.categorie:focus {
+  outline: 2px solid blue;
+  outline-offset: 4px;
+}
+
+
+
+
+/* categories cards */
+.card-custom {
+  overflow: hidden;
+  min-height: 450px;
+  box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+}
+
+.card-custom-img {
+  height: 200px;
+  min-height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-color: inherit;
+}
+
+/* First border-left-width setting is a fallback */
+.card-custom-img::after {
+  position: absolute;
+  content: '';
+  top: 161px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-top-width: 40px;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 545px;
+  border-left-width: calc(575px - 5vw);
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: inherit;
+}
+
+.card-custom-avatar img {
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+  position: absolute;
+  top: 100px;
+  left: 1.25rem;
+  width: 100px;
+  height: 100px;
+}

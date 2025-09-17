@@ -14,6 +14,7 @@
 
 
   <link rel="stylesheet" href="./assets/css/index.css" />
+  <link rel="stylesheet" href="./assets/css/events.css" />
 
   <title>Document</title>
 </head>
@@ -23,7 +24,7 @@
     <!-- navbar  -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="logo" href="./index.html">شعار الموقع</a>
+        <a class="logo me-3" href="./index.html">شعار الموقع</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,7 +54,7 @@
   </header>
   <main>
     <!-- slider -->
-    <div class="container-fluid">
+    <div class="container-fluid carousel-container">
       <div class="row home-page-slide justify-content-center py-5">
 
         <div id="home-page-slide" class="carousel slide col-10 ">
@@ -114,55 +115,50 @@
     </div>
 
     <!-- categories -->
-    <div class="container my-5 d-flex justify-content-around">
+    <div class="container">
 
-      <div class="d-flex justify-content-center">
-        <div class="categorie btn-links btn btn-outline-dark d-flex
+      <div class="my-5 d-flex justify-content-around">
+
+        <!-- categories name -->
+        <div id="music" class="categorie-container d-flex justify-content-center ">
+          <div class="categorie btn-links btn btn-outline-dark d-flex
          flex-column align-items-center justify-content-evenly p-4 rounded-circle ">
-          <i class="fa-solid fa-music fa-2xl"></i>
-          <span>الموسيقى</span>
+            <i class="fa-solid fa-music fa-2xl "></i>
+            <span>الموسيقى</span>
+          </div>
         </div>
-      </div>
-      <div class="d-flex justify-content-center">
-        <div class="categorie btn-links btn btn-outline-dark d-flex
+        <div id="culture" class=" categorie-container d-flex justify-content-center">
+          <div class="categorie btn-links btn btn-outline-dark d-flex
          flex-column align-items-center justify-content-evenly p-4 rounded-circle ">
-          <i class="fa-solid fa-users-rays fa-2xl"></i>
-          <span>ثقافة</span>
+            <i class="fa-solid fa-users-rays fa-2xl"></i>
+            <span>ثقافة</span>
+          </div>
         </div>
-      </div>
-      <div class="d-flex justify-content-center">
-        <div class="categorie btn-links btn btn-outline-dark d-flex
+        <div id="sport" class="categorie-container d-flex justify-content-center">
+          <div class="categorie btn-links btn btn-outline-dark d-flex
          flex-column align-items-center justify-content-evenly p-4 rounded-circle ">
-          <i class="fa-solid fa-medal fa-2xl"></i>
-          <span>رياضة</span>
+            <i class="fa-solid fa-medal fa-2xl"></i>
+            <span>رياضة</span>
+          </div>
         </div>
-      </div>
-      <div class="d-flex justify-content-center">
-        <div class="categorie btn-links btn btn-outline-dark d-flex
+        <div id="family" class="categorie-container d-flex justify-content-center">
+          <div class="categorie btn-links btn btn-outline-dark d-flex
          flex-column align-items-center justify-content-evenly p-4 rounded-circle ">
-          <i class="fa-solid fa-people-group fa-2xl"></i>
-          <span>عائلي</span>
+            <i class="fa-solid fa-people-group fa-2xl"></i>
+            <span>عائلي</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- categories cards -->
+      <div id="cardsContainer" class="row pt-5 m-auto">
+        <div class="card-deck" >
+          <!-- Cards will be dynamically inserted here -->
         </div>
       </div>
 
     </div>
-
-
-
-  <!-- Gender Switch Bar -->
-    <div class="gender-bar d-flex">
-      <button id="btnMan" class="btn flex-fill active">Man</button>
-      <button id="btnWoman" class="btn flex-fill">Woman</button>
-    </div>
-
-    <!-- Cards Section -->
-    <a href="https://www.youtube.com/">
-      <div class="container py-4">
-        <div id="cardsContainer" class="row g-3">
-          <!-- Cards will be injected here by JS -->
-        </div>
-      </div>
-    </a>
 
   </main>
 
