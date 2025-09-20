@@ -247,24 +247,8 @@ function renderCards(data) {
 }
 
 
-const cardsData = [
-  {
-    bg: "http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg",
-    avatar: "http://res.cloudinary.com/d3/image/upload/c_pad,g_center,h_200,q_auto:eco,w_200/bootstrap-logo_u3c8dx.jpg",
-    title: "Card title",
-    text: `Card has minimum height set but will expand if more space is needed 
-            for card body content. You can use Bootstrap 
-            <a href="https://getbootstrap.com/docs/4.0/components/card/#card-decks" target="_blank">card-decks</a>.`,
-    link1: "#",
-    btn1: "Option",
-    link2: "#",
-    btn2: "Other option"
-  }
-];
-
-
-
 setActiveButton(btnMusic);
 renderCards(musicData);
+
 
 
