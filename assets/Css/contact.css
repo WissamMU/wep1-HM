@@ -1,0 +1,23 @@
+:root {
+    --main-color: #2196f3;
+    --main-color-alt: #1787e0;
+    --background-color: #eee;
+    --background-color-mid: #E3E3E3;
+    --background-color-heavy: #B4B4B8;
+    --transition-delay: 0.5s;
+    --padding-top-bottom: 100px 0;
+}
+
+/* wave color */
+section.footer .wave .shape-fill {
+  fill: var(--background-color-mid);
+}
+
+/* main */
+main {
+    background-color: var(--background-color-mid);
+}
+
+.card{
+    background-color: var(--background-color);
+}

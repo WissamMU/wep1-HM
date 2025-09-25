@@ -31,6 +31,9 @@ body {
   background-color: var(--background-color);
 }
 
+.ltr{
+  direction: ltr;
+}
 /* waves between sections */
 section.wave-sec {
   position: relative;
@@ -451,8 +454,8 @@ footer {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  color: var(--main-color);
-  background-color: var(--background-color);
+  background-color: var(--main-color);
+  color: var(--background-color);
   display: none;
 }
 
