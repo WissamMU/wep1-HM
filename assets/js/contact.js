@@ -19,3 +19,4 @@ successAlert.innerHTML = "✅ تم إرسال الرسالة بنجاح!";
 form.appendChild(successAlert);
 
 form.reset();
+

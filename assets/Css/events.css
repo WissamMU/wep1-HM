@@ -1,3 +1,25 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Cairo-Bold;
+  src: url("../fonts/Cairo-Bold.ttf");
+}
+
+:root {
+  --main-color: #2196f3;
+  --main-color-alt: #1787e0;
+  --background-color: #eee;
+  --background-color-mid: #E3E3E3;
+  --background-color-heavy: #B4B4B8;
+  --transition-delay: 0.5s;
+  --padding-top-bottom: 100px 0;
+}
+
+
 a {
   text-decoration: none;
 }
@@ -208,4 +230,10 @@ ul {
 
 .hide {
   display: none;
+}
+
+
+/* wave color */
+section.footer .wave .shape-fill {
+  fill: white;
 }
