@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #2196f3;
+  --main-color-alt: #1787e0;
+  --background-color: #eee;
+  --background-color-mid: #e3e3e3;
+  --background-color-heavy: #b4b4b8;
+
+  --transition-delay: 0.5s;
+  --padding-top-bottom: 100px 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+}
+
+.goal {
+  position: relative;
+  background: url("../img/about/goal.jpg") no-repeat center center/cover;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px;
+  color: #fff;
+}
+
+.goal::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.goal * {
+  position: relative;
+  z-index: 2;
+}
+
+.vision {
+  background: var(--main-color) ;
+  padding: 40px 20px;
+  text-align: center;
+}
+.members {
+  padding: 40px;
+  background: #fafafa;
+}
+
+
+.msg {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 40px 20px;
+  align-items: center;
+  text-align: center;
+  max-width: 100%;
+  margin: 0;
+  gap: 20px;
+}
+
+.msg .content {
+  flex: 1;
+}
+
+.msg .content h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.msg .content p {
+  color: #100e0e;
+  line-height: 1.6;
+}
+
+.msg .image {
+  flex: 1;
+  text-align: center;
+}
+
+.msg .image img {
+  max-width: 75%;
+  height: auto;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  background: white;
+  padding: 20px;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+details {
+  background: white;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 5px;
+  max-width: 700px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
