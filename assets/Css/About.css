@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   --main-color: #2196f3;
   --main-color-alt: #1787e0;
@@ -13,11 +14,14 @@
   --transition-delay: 0.5s;
   --padding-top-bottom: 100px 0;
 }
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background: #f4f4f4;
 }
+
+
 
 .goal {
   position: relative;
@@ -49,13 +53,14 @@ body {
 }
 
 .vision {
-  background: var(--main-color) ;
+  background: var(--main-color);
   padding: 40px 20px;
   text-align: center;
 }
+
 .members {
   padding: 40px;
-  background: #fafafa;
+  background: var(--background-color);
 }
 
 
@@ -102,6 +107,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .card {
   background: white;
   padding: 20px;
@@ -110,12 +116,14 @@ body {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
+
 .card img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   margin-bottom: 10px;
 }
+
 details {
   background: white;
   margin: 10px auto;
@@ -124,4 +132,81 @@ details {
   max-width: 700px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+}
+
+.policy {
+  background-color: var(--background-color-heavy);
+}
+
+
+.testimonials {
+  position: relative;
+  background-color: var(--section-background);
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+}
+
+.testimonials .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.testimonials .box {
+  position: relative;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 7%);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.testimonials .box img {
+  position: absolute;
+  left: -10px;
+  top: -25px;
+  width: 100px;
+  height: 100px;
+  border: 10px solid var(--section-background);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.testimonials .box h3 {
+  margin: 0 0 10px;
+}
+
+.testimonials .title {
+  display: block;
+  margin-bottom: 10px;
+  color: #777;
+}
+
+
+.testimonials p {
+  color: #777;
+  line-height: 1.5;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px; /* Smaller base font size for mobile */
+    }
+    .about-us p {
+        font-size: 1rem; /* 14px on mobile */
+    }
+    .about-us h3, .about-us h4 {
+        font-size: 1.3rem; /* 18.2px on mobile */
+    }
+    .about-us h5 {
+        font-size: 1.1rem; /* 15.4px on mobile */
+    }
 }
