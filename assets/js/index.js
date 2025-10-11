@@ -1,8 +1,4 @@
 
-
-
-
-
 // scroll to top button
 const btn = document.getElementById("btn-back-to-top") || document.createElement("button");
 
