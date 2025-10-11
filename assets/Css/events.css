@@ -13,12 +13,11 @@
   --main-color: #2196f3;
   --main-color-alt: #1787e0;
   --background-color: #eee;
-  --background-color-mid: #E3E3E3;
-  --background-color-heavy: #B4B4B8;
+  --background-color-mid: #e3e3e3;
+  --background-color-heavy: #b4b4b8;
   --transition-delay: 0.5s;
   --padding-top-bottom: 100px 0;
 }
-
 
 a {
   text-decoration: none;
@@ -221,7 +220,19 @@ ul {
   margin-bottom: 40px;
   transition: 0.2s;
 }
-
+@media (max-width: 776px) {
+  .switcher button {
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #eee;
+    min-width: 70px;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    transition: 0.2s;
+  }
+}
 .switcher button.active,
 .switcher button:hover {
   background-color: var(--main-color);
@@ -231,7 +242,6 @@ ul {
 .hide {
   display: none;
 }
-
 
 /* wave color */
 section.footer .wave .shape-fill {
