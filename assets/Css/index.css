@@ -28,9 +28,10 @@ body {
   background-color: var(--background-color);
 }
 
-.ltr{
+.ltr {
   direction: ltr;
 }
+
 /* waves between sections */
 section.wave-sec {
   position: relative;
@@ -102,6 +103,8 @@ section.footer .wave .shape-fill {
 
 .section-title {
   color: var(--main-color);
+    text-shadow: 1px 1px 2px black;
+
 }
 
 .container.slider-content {

@@ -76,9 +76,6 @@ body {
   gap: 20px;
 }
 
-.msg .content {
-  flex: 1;
-}
 
 .msg .content h2 {
   font-size: 22px;
@@ -97,7 +94,7 @@ body {
 }
 
 .msg .image img {
-  max-width: 75%;
+  max-width: 100%;
   height: auto;
 }
 

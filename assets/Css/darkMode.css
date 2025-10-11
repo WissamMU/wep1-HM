@@ -1,0 +1,183 @@
+
+/* Dark mode variables and overrides */
+:root {
+  --text-color: #000;
+  /* Light mode text */
+  --text-color-inverse: #fff;
+  /* For elements needing inverse */
+  --background-color: #eee;
+  --background-color-mid: #E3E3E3;
+  --background-color-heavy: #B4B4B8;
+  --main-color: #2196f3;
+  --main-color-alt: #1787e0;
+}
+
+body.dark {
+  --text-color: #303030;
+  /* Dark mode text */
+  --text-color-inverse: #303030;
+  --background-color: #5e5e5e;
+  --background-color-mid: #919191;
+  --background-color-heavy: #c6c6c6;
+  --main-color: #4da6ff;
+  /* Slightly brighter for dark */
+  --main-color-alt: #3399ff;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar {
+  background-color: var(--background-color) !important;
+}
+
+.navbar .nav-link {
+  color: var(--text-color);
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--main-color);
+}
+
+.carousel-container {
+  background-color: var(--background-color-mid);
+}
+
+.carousel-caption {
+  background-color: var(--background-color-mid);
+  color: var(--text-color);
+}
+
+.section-title {
+  color: var(--main-color);
+}
+
+.categorie {
+  border-color: var(--text-color);
+  color: var(--text-color);
+}
+
+.categorie i {
+  color: var(--main-color);
+}
+
+/* Adjust wave fills for dark mode */
+body.dark section.categories-sec .wave .shape-fill {
+  fill: var(--background-color-mid);
+}
+
+body.dark section.latest-events .wave .shape-fill {
+  fill: var(--background-color);
+}
+
+body.dark section.footer .wave .shape-fill {
+  fill: var(--background-color-heavy);
+}
+
+section.latest-events {
+  background-color: var(--background-color-heavy);
+}
+
+footer {
+  background-color: var(--main-color);
+}
+
+/* Override Bootstrap classes if needed */
+.bg-body-tertiary {
+  background-color: var(--background-color) !important;
+}
+
+.text-light {
+  color: var(--text-color-inverse) !important;
+  /* Adjust for dark mode visibility */
+}
+
+.btn-outline-dark {
+  color: var(--text-color);
+  border-color: var(--text-color);
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--main-color);
+  color: var(--text-color-inverse);
+}
+
+/* Add more overrides as needed for other elements like cards, etc. */
+.card-background:after {
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Darken overlay in dark mode if needed */
+}
+
+body.dark .card-background .category,
+body.dark .card-background .card-description,
+body.dark .card-background small {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+body.dark .card-background .card-caption {
+  color: #f0f0f0;
+}
+
+/* Fixes for categories in dark mode */
+body.dark .categorie {
+  color: white;
+}
+
+body.dark .categorie:hover,
+body.dark .categorie.active {
+  color: white;
+}
+
+body.dark #all:hover,
+body.dark #all.active {
+  background-color: #34ce10;
+}
+
+body.dark #all:hover i,
+body.dark #all.active i {
+  color: white;
+}
+
+body.dark #music:hover,
+body.dark #music.active {
+  background-color: #3c0dfe;
+}
+
+body.dark #music:hover i,
+body.dark #music.active i {
+  color: white;
+}
+
+body.dark #culture:hover,
+body.dark #culture.active {
+  background-color: #598045;
+}
+
+body.dark #culture:hover i,
+body.dark #culture.active i {
+  color: white;
+}
+
+body.dark #sport:hover,
+body.dark #sport.active {
+  background-color: #a01313;
+}
+
+body.dark #sport:hover i,
+body.dark #sport.active i {
+  color: white;
+}
+
+body.dark #family:hover,
+body.dark #family.active {
+  background-color: #0369ff;
+}
+
+body.dark #family:hover i,
+body.dark #family.active i {
+  color: white;
+}
