@@ -1,15 +1,15 @@
-
 /* Dark mode variables and overrides */
 :root {
   --text-color: #000;
-  /* Light mode text */
   --text-color-inverse: #fff;
-  /* For elements needing inverse */
+
+
   --background-color: #eee;
   --background-color-mid: #E3E3E3;
   --background-color-heavy: #B4B4B8;
   --main-color: #2196f3;
   --main-color-alt: #1787e0;
+
 }
 
 body.dark {
@@ -22,6 +22,9 @@ body.dark {
   --main-color: #4da6ff;
   /* Slightly brighter for dark */
   --main-color-alt: #3399ff;
+
+  --white: white;
+  --black: black;
 }
 
 body {
@@ -124,12 +127,12 @@ body.dark .card-background .card-caption {
 
 /* Fixes for categories in dark mode */
 body.dark .categorie {
-  color: white;
+  color: var(--text-color-inverse);
 }
 
 body.dark .categorie:hover,
 body.dark .categorie.active {
-  color: white;
+  color: var(--text-color-inverse);
 }
 
 body.dark #all:hover,
@@ -139,7 +142,7 @@ body.dark #all.active {
 
 body.dark #all:hover i,
 body.dark #all.active i {
-  color: white;
+  color: var(--text-color-inverse);
 }
 
 body.dark #music:hover,
@@ -149,7 +152,7 @@ body.dark #music.active {
 
 body.dark #music:hover i,
 body.dark #music.active i {
-  color: white;
+  color: var(--text-color-inverse);
 }
 
 body.dark #culture:hover,
@@ -159,7 +162,7 @@ body.dark #culture.active {
 
 body.dark #culture:hover i,
 body.dark #culture.active i {
-  color: white;
+  color: var(--text-color-inverse);
 }
 
 body.dark #sport:hover,
@@ -169,7 +172,7 @@ body.dark #sport.active {
 
 body.dark #sport:hover i,
 body.dark #sport.active i {
-  color: white;
+  color: var(--text-color-inverse);
 }
 
 body.dark #family:hover,
@@ -179,5 +182,45 @@ body.dark #family.active {
 
 body.dark #family:hover i,
 body.dark #family.active i {
-  color: white;
+  color: var(--text-color-inverse);
 }
+
+
+
+
+
+
+
+/* contact dark mode */
+
+/* wave color */
+
+
+
+body.dark  section.contact .contact-info h6 {
+  color: var(--white);
+}
+
+
+body.dark  section.contact .contact-info i {
+  color: var(--main-color);
+}
+
+body.dark  section.contact .contact-info .fast-link a {
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+.btn-outline-secondary {
+  background-color: var(--white);
+}
+
+body.dark .msg-card h4{
+  color: var(--main-color);
+
+}
+body.dark .msg-card label {
+  color: var(--background-color-heavy);
+}
+
+

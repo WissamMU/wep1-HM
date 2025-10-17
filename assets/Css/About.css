@@ -5,22 +5,45 @@
 }
 
 :root {
+
+  --text-color: white;
   --main-color: #2196f3;
   --main-color-alt: #1787e0;
   --background-color: #eee;
   --background-color-mid: #e3e3e3;
   --background-color-heavy: #b4b4b8;
 
+  --color-inverse: black;
+
   --transition-delay: 0.5s;
   --padding-top-bottom: 100px 0;
+
+  
+}
+
+body.dark {
+  --text-color: #303030;
+  /* Dark mode text */
+  --text-color-inverse: #303030;
+  --background-color: #5e5e5e;
+  --background-color-mid: #919191;
+  --background-color-heavy: #c6c6c6;
+  --main-color: #4da6ff;
+  /* Slightly brighter for dark */
+  --main-color-alt: #3399ff;
+
+  --color-inverse: white;
+  --black: black;
 }
 
 body {
-  font-family: Arial, sans-serif;
   line-height: 1.6;
-  background: #f4f4f4;
+  background: var(--background-color);
 }
 
+section.footer .wave .shape-fill {
+  fill: var(--background-color-heavy);
+}
 
 
 .goal {
@@ -33,7 +56,7 @@ body {
   text-align: center;
   flex-direction: column;
   padding: 20px;
-  color: #fff;
+  color: var(--background-color-heavy);
 }
 
 .goal::before {
@@ -64,10 +87,11 @@ body {
 }
 
 
+
 .msg {
   display: flex;
   justify-content: space-between;
-  background: #fff;
+  background: var(--background-color-heavy);
   padding: 40px 20px;
   align-items: center;
   text-align: center;
@@ -106,7 +130,7 @@ body {
 }
 
 .card {
-  background: white;
+  background: var(--background-color-mid);
   padding: 20px;
   width: 250px;
   border-radius: 8px;
@@ -122,7 +146,7 @@ body {
 }
 
 details {
-  background: white;
+  background: var(--background-color-mid);
   margin: 10px auto;
   padding: 15px;
   border-radius: 5px;
@@ -152,7 +176,7 @@ details {
 .testimonials .box {
   position: relative;
   padding: 20px;
-  background-color: white;
+  background-color: var(--background-color-mid);
   box-shadow: 0 2px 4px rgb(0 0 0 / 7%);
   border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -182,12 +206,12 @@ details {
 .testimonials .title {
   display: block;
   margin-bottom: 10px;
-  color: #777;
+  color: var(--text-color);
 }
 
 
 .testimonials p {
-  color: #777;
+  color: var(--text-color);
   line-height: 1.5;
   margin-top: 10px;
   margin-bottom: 0;

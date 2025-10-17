@@ -12,6 +12,10 @@
 section.footer .wave .shape-fill {
     fill: var(--background-color-mid);
 }
+body.dark  section.footer .wave .shape-fill {
+  fill: var(--background-color-mid) !important;
+}
+
 
 /* main */
 main {
@@ -45,11 +49,6 @@ section.contact .contact-info .fast-link a {
     color: var(--main-color);
     border: 1px solid var(--main-color);
 }
-
-
-
-
-
 
 
 section.contact .card {
