@@ -18,7 +18,7 @@ const musicData = [
         link: "./event.html",
         btn: "تفاصيل",
         date: "2025-10-11",
-        location: "جدة – مركز المؤتمرات"
+        location: "جدة - مركز المؤتمرات"
     },
     {
         bg: './assets/img/events/jeddah_lifearts_pics/jeddah_lifearts_pics_3.jpg',
@@ -28,7 +28,7 @@ const musicData = [
         link: "./event.html",
         btn: "تفاصيل",
         date: "2025-10-12",
-        location: "جدة – الواجهة البحرية"
+        location: "جدة - الواجهة البحرية"
     },
     {
         bg: './assets/img/events/jeddah_lifearts_pics/jeddah_lifearts_pics_4.jpg',
@@ -38,7 +38,7 @@ const musicData = [
         link: "./event.html",
         btn: "تفاصيل",
         date: "2025-10-13",
-        location: "جدة – المسرح الكبير"
+        location: "جدة - المسرح الكبير"
     }
 ];
 const cultureData = [
@@ -50,7 +50,7 @@ const cultureData = [
         link: "./event.html",
         btn: "تفاصيل",
         date: "طوال العام",
-        location: "جدة – حي البلد"
+        location: "جدة - حي البلد"
     },
     {
         bg: './assets/img/events/jeddahheritage_pics/jeddahheritage_pics_2.jpg',
@@ -60,7 +60,7 @@ const cultureData = [
         link: "./event.html",
         btn: "تفاصيل",
         date: "طوال العام",
-        location: "جدة – حي البلد"
+        location: "جدة - حي البلد"
     },
     {
         bg: './assets/img/events/jeddahheritage_pics/jeddahheritage_pics_3.jpg',
@@ -70,7 +70,7 @@ const cultureData = [
         link: "./event.html",
         btn: "تفاصيل",
         date: "طوال العام",
-        location: "جدة – حي البلد"
+        location: "جدة - حي البلد"
     },
     {
         bg: './assets/img/events/jeddahheritage_pics/jeddahheritage_pics_4.jpg',
@@ -80,7 +80,7 @@ const cultureData = [
         link: "./event.html",
         btn: "تفاصيل",
         date: "طوال العام",
-        location: "جدة – حي البلد"
+        location: "جدة - حي البلد"
     }
 ];
 const familyData = [
@@ -92,7 +92,7 @@ const familyData = [
         link: "./event.html",
         btn: "تفاصيل",
         date: "متاح يومياً",
-        location: "جدة – شاطئ السيف"
+        location: "جدة - شاطئ السيف"
     },
     {
         bg: './assets/img/events/saifbeach_pics/saifbeach_pics_5.jpg',
@@ -102,7 +102,7 @@ const familyData = [
         link: "./event.html",
         btn: "تفاصيل",
         date: "متاح يومياً",
-        location: "جدة – شاطئ السيف"
+        location: "جدة - شاطئ السيف"
     },
     {
         bg: './assets/img/events/saifbeach_pics/saifbeach_pics_1.jpg',
@@ -112,7 +112,7 @@ const familyData = [
         link: "./event.html",
         btn: "تفاصيل",
         date: "متاح يومياً",
-        location: "جدة – شاطئ السيف"
+        location: "جدة - شاطئ السيف"
     },
     {
         bg: './assets/img/events/saifbeach_pics/saifbeach_pics_4.jpg',
@@ -122,7 +122,7 @@ const familyData = [
         link: "./event.html",
         btn: "تفاصيل",
         date: "متاح يومياً",
-        location: "جدة – شاطئ السيف"
+        location: "جدة - شاطئ السيف"
     },
     {
         bg: './assets/img/events/saifbeach_pics/saifbeach_pics_2.jpg',
@@ -132,20 +132,19 @@ const familyData = [
         link: "./event.html",
         btn: "تفاصيل",
         date: "متاح يومياً",
-        location: "جدة – شاطئ السيف"
+        location: "جدة - شاطئ السيف"
     }
 ];
-
 const sportData = [
     {
         bg: './assets/img/events/formula1_pics/formula1_pics_1.jpg',
         avatar: './assets/img/sport-logo.jpg',
-        title: "سباق الفورمولا 1 – جدة",
+        title: "سباق الفورمولا 1 - جدة",
         text: "أقوى سباق سيارات عالمي يقام على كورنيش جدة، يجمع أسرع السائقين في أجواء مليئة بالإثارة والتشويق على حلبة الشوارع الشهيرة.",
         link: "./event.html",
         btn: "تفاصيل",
         date: "2025-12-01 إلى 2025-12-04",
-        location: "جدة – كورنيش جدة"
+        location: "جدة - كورنيش جدة"
     },
     {
         bg: './assets/img/events/formula1_pics/formula1_pics_2.jpg',
@@ -155,7 +154,7 @@ const sportData = [
         link: "./event.html",
         btn: "تفاصيل",
         date: "2025-12-02",
-        location: "جدة – كورنيش جدة"
+        location: "جدة - كورنيش جدة"
     },
     {
         bg: './assets/img/events/formula1_pics/formula1_pics_3.jpg',
@@ -165,7 +164,7 @@ const sportData = [
         link: "./event.html",
         btn: "تفاصيل",
         date: "2025-12-03",
-        location: "جدة – كورنيش جدة"
+        location: "جدة - كورنيش جدة"
     },
     {
         bg: './assets/img/events/formula1_pics/formula1_pics_4.jpg',
@@ -175,7 +174,7 @@ const sportData = [
         link: "./event.html",
         btn: "تفاصيل",
         date: "2025-12-04",
-        location: "جدة – كورنيش جدة"
+        location: "جدة - كورنيش جدة"
     },
     {
         bg: './assets/img/events/formula1_pics/formula1_pics_7.jpg',
@@ -185,7 +184,7 @@ const sportData = [
         link: "./event.html",
         btn: "تفاصيل",
         date: "2025-12-03 إلى 2025-12-04",
-        location: "جدة – كورنيش جدة"
+        location: "جدة - كورنيش جدة"
     },
     {
         bg: './assets/img/events/formula1_pics/formula1_pics_10.jpg',
@@ -195,7 +194,7 @@ const sportData = [
         link: "./event.html",
         btn: "تفاصيل",
         date: "2025-12-01 إلى 2025-12-04",
-        location: "جدة – كورنيش جدة"
+        location: "جدة - كورنيش جدة"
     }
 ];
 
