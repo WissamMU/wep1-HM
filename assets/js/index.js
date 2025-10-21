@@ -38,3 +38,20 @@ themeToggle.addEventListener('click', () => {
     localStorage.setItem('theme', 'light');
   }
 });
+
+
+
+// زر تغير اللغة
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleBtn = document.querySelectorAll("#toggleBtn");
+  const arabicSection = document.getElementById("arabicSection");
+  const englishSection = document.getElementById("englishSection");
+
+  toggleBtn.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      // التبديل بين الإظهار والإخفاء
+      arabicSection.classList.toggle("d-none");
+      englishSection.classList.toggle("d-none");
+    });
+  });
+});

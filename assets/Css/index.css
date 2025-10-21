@@ -32,6 +32,10 @@ body {
   direction: ltr;
 }
 
+body .english{direction:ltr}
+
+
+
 /* waves between sections */
 section.wave-sec {
   position: relative;

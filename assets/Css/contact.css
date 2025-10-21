@@ -12,6 +12,7 @@
 section.footer .wave .shape-fill {
     fill: var(--background-color-mid);
 }
+
 body.dark  section.footer .wave .shape-fill {
   fill: var(--background-color-mid) !important;
 }
