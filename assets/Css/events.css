@@ -19,6 +19,77 @@
   --padding-top-bottom: 100px 0;
 }
 
+body.dark .events {
+  background-color: #1a1a1a;
+}
+
+body.dark .events .box {
+  background-color: #2d2d2d;
+  border-color: #444;
+}
+
+body.dark .events .box h2 {
+  color: #e0e0e0;
+}
+
+body.dark .img-holder::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -15px;
+  border-style: solid;
+  border-color: transparent transparent #2d2d2d transparent;
+  border-width: 0px 0px 45px 510px;
+  transition: var(--transition-delay);
+  -webkit-transition: var(--transition-delay);
+  -moz-transition: var(--transition-delay);
+  -ms-transition: var(--transition-delay);
+  -o-transition: var(--transition-delay);
+}
+
+body.dark .events .quality a {
+  color: #f44036;
+  border-color: #f44036;
+  background: linear-gradient(to right, #f44036 50%, #5a5151 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+
+body.dark .events .passion a {
+  color: #03a9f4;
+  border-color: #03a9f4;
+  background: linear-gradient(to right, #03a9f4 50%, #5a5151 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+
+body.dark .events .time a {
+  color: #009688;
+  border-color: #009688;
+  background: linear-gradient(to right, #009688 50%, #5a5151 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+
+body.dark .events .box p {
+  color: #b0b0b0;
+}
+
+body.dark .switcher button {
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+body.dark .switcher button.active,
+body.dark .switcher button:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+body.dark section.footer .wave .shape-fill {
+  fill: #1a1a1a;
+}
+
 a {
   text-decoration: none;
 }
@@ -43,7 +114,7 @@ ul {
 .events {
   position: relative;
   padding: var(--padding-top-bottom);
-  background-color: white;
+  background-color: var(--background-color-mid);
 }
 
 .events .container {

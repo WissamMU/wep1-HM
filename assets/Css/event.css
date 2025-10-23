@@ -3,16 +3,20 @@
   --main-color-alt: #1787e0;
   --secondry-color: #85c9ff;
   --background-color: #eee;
+  --bg-ld: white;
+  --bg-card: white;
   --transition-delay: 0.5s;
   --padding-top-bottom: 100px 0;
   --main-line-heght: 2.2px;
+  --text-h3: black;
 }
-
 
 body.dark {
   --text-color: #303030;
-
+  --bg-card: #2d2d2d;
   --secondry-color: #3b3b3b;
+  --bg-ld: #919191;
+  --text-h3: #919191;
 
   /* Dark mode text */
   --text-color-inverse: #303030;
@@ -26,7 +30,6 @@ body.dark {
   --color-inverse: white;
   --black: black;
 }
-
 
 .container {
   margin: 20px auto;
@@ -79,7 +82,7 @@ body.dark {
 .location-img:before {
   content: "";
   position: absolute;
-  background-color: var(--secondry-color);
+  background-color: var(--main-color-alt);
   width: 670px;
   height: 420px;
   border-radius: 4px;
@@ -224,7 +227,7 @@ body.dark {
 .more-event {
   position: relative;
   padding: var(--padding-top-bottom);
-  background-color: white;
+  background-color: var(--bg-ld);
 }
 
 .more-event .container {
@@ -234,10 +237,11 @@ body.dark {
 }
 
 .more-event .box {
+  position: relative;
   box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
   border-radius: 6px;
   overflow: hidden;
-  background-color: white;
+  background-color: var(--bg-card);
   transition: transform var(--transition-delay),
     box-shadow var(--transition-delay);
   -webkit-transition: transform var(--transition-delay),
@@ -259,21 +263,21 @@ body.dark {
   -o-transform: translateY(-10px);
 }
 
-.more-event .box:hover .info i {
-  animation: go-right 0.5s linear infinite;
-  -webkit-animation: go-right 0.5s linear infinite;
-}
-
 .more-event .box img {
   width: 100%;
 }
 
 .more-event .box .content {
   padding: 20px;
+  height: 450px;
+}
+.english .more-event .box .content {
+  height: 520px;
 }
 
 .more-event .box .content h3 {
   margin: 0;
+  color: var(--text-h3);
 }
 
 .more-event .box .content p {
@@ -283,11 +287,19 @@ body.dark {
 }
 
 .more-event .box .info {
+  position: absolute;
   padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid #ececec;
+  bottom: 15px;
+}
+
+.more-event .box .info::before {
+  content: "";
+  position: absolute;
+  width: 1000px;
+  height: 2px;
+  background-color: #eee;
+  left: -500px;
+  bottom: 60px;
 }
 
 .more-event .box .info a,

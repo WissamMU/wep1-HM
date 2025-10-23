@@ -46,7 +46,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav m-auto mb-2 mb-lg-0">
               <li class="nav-item ps-5">
-                <a class="nav-link  " aria-current="page" href="./index.html">الرئيسية</a>
+                <a class="nav-link " aria-current="page" href="./index.html">الرئيسية</a>
               </li>
               <li class="nav-item ps-5">
                 <a class="nav-link" href="./events.html">الفعاليات</a>
@@ -55,17 +55,27 @@
                 <a class="nav-link" href="./contact.html">تواصل معنا</a>
               </li>
               <li class="nav-item ps-5">
-                <a class="nav-link active" href="./about.html">عنا</a>
+                <a class="nav-link  active " href="./about.html">عنا</a>
               </li>
             </ul>
+            <div class="d-flex justify-content-around align-items-center">
 
-            <button id="toggleBtn" class=" py-auto py-auto me-3 border border-0 lang-btn lang-btn ">
-              <img src="./assets/img/EN.webp" alt="EN" style="max-height: 2rem;">
-            </button>
-            <button id="theme-toggle" class="btn btn-outline-secondary me-3">
-              <i class="fas fa-sun"></i>
-            </button>
+              <button id="toggleBtn" class="py-auto me-3 border border-0 lang-btn lang-btn">
+                <img src="./assets/img/EN.webp" alt="EN" style="max-height: 2rem;">
+              </button>
+
+              <div class="form-check form-switch me-3 ">
+                <input class="form-check-input" type="checkbox" id="theme-toggle" style="transform: scale(1.5);">
+                <label class="form-check-label" for="theme-toggle">
+                  <i class="fas fa-sun"></i>
+                </label>
+              </div>
+            </div>
+
           </div>
+
+
+
         </div>
       </nav>
     </header>
@@ -107,7 +117,7 @@
           <div class="msg container">
             <div class="row m-2">
 
-              <div class="content col-md-7 pb-3">
+              <div class="content col-md-7 pb-3 d-flex justify-content-center flex-column">
                 <h1>الرسالة</h1>
                 <h5>
                   رسالتنا تتمثل في دعم الحركة الثقافية والترفيهية في المجتمع،
@@ -137,7 +147,9 @@
               <h3>وسام محمد</h3>
               <span class="title">wessam_237869</span>
               <p>
-                HomePage + ...
+                قام بتصميم الصفحة الرئيسية وصفحة التواصل معنا بما يشمل الدارك مود
+                الخاص بهما واللغتين العربية والانكليزية
+                والتصميم المناسب لهما
               </p>
             </div>
 
@@ -147,7 +159,7 @@
               <span class="title">abdullah_285176</span>
 
               <p>
-                تجميع المحتوى + about page
+                قام بانجاز قسم عنا وتجميع المحتوى العام للموقع المحترم بما يتضمن صور ومعلومات مفيدة
               </p>
             </div>
             <div class="box">
@@ -156,8 +168,8 @@
               <span class="title">fouad_235163</span>
 
               <p>
-                ?? + ??
-              </p>
+                قام بإنجاز قسم الفعاليات وقسم التفاصيل بما يشمل الدارك مود الخاص بهما واللغتين العربية والانكليزية
+                والتصميم المناسب لهما </p>
             </div>
           </div>
         </div>
@@ -308,18 +320,18 @@
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="logo ms-3" href="./indexEN.html">Your Events</a>
+          <a class="logo ms-3" href="./index.html">Your Events</a>
+
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav m-auto mb-2 mb-lg-0">
               <li class="nav-item pe-5">
-                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                <a class="nav-link " aria-current="page" href="./index.html">Home</a>
               </li>
               <li class="nav-item pe-5">
                 <a class="nav-link" href="./events.html">Events</a>
@@ -328,15 +340,20 @@
                 <a class="nav-link" href="./contact.html">Contact Us</a>
               </li>
               <li class="nav-item pe-5">
-                <a class="nav-link active" href="./about.html">About</a>
+                <a class="nav-link  active " href="./about.html">About</a>
               </li>
             </ul>
-            <button id="toggleBtn" class="py-auto me-3 border border-0 lang-btn">
-              <img src="./assets/img/AR.webp" alt="AR" style="max-height: 2rem;">
-            </button>
-            <button id="theme-toggle" class="btn btn-outline-secondary ms-3">
-              <i class="fas fa-sun"></i>
-            </button>
+            <div class="d-flex justify-content-around align-items-center">
+              <button id="toggleBtn" class="py-auto border border-0 lang-btn px-3">
+                <img src="./assets/img/AR.webp" alt="AR" style="max-height: 2rem;">
+              </button>
+              <div class="form-check form-switch ">
+                <input class="form-check-input" type="checkbox" id="theme-toggleEN" style="transform: scale(1.5);">
+                <label class="form-check-label" for="theme-toggleEN">
+                  <i class="fas fa-sun"></i>
+                </label>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
@@ -374,7 +391,7 @@
 
           <div class="msg container">
             <div class="row m-2">
-              <div class="content col-md-7 pb-3">
+              <div class="content col-md-7 pb-3 d-flex justify-content-center flex-column">
                 <h1>Mission</h1>
                 <h5>
                   Our mission is to support the cultural and entertainment movement in the community
@@ -398,10 +415,11 @@
           <div class="container">
             <div class="box">
               <img decoding="async" src="./assets/img/about/wesam.jpg" alt="" />
-              <h3>Wesam Mohammed</h3>
+              <h3>wessam Mohammed</h3>
               <span class="title">wessam_237869</span>
               <p>
-                HomePage + ...
+                Designed the homepage and contact us page, including their dark mode, both Arabic and English languages,
+                and their appropriate design.
               </p>
             </div>
 
@@ -410,7 +428,8 @@
               <h3>Abdullah</h3>
               <span class="title">abdullah_285176</span>
               <p>
-                Content Collection + About Page
+                Completed the About Us section and general content collection for the esteemed website, including useful
+                images and information.
               </p>
             </div>
             <div class="box">
@@ -418,8 +437,8 @@
               <h3>Fouad</h3>
               <span class="title">fouad_235163</span>
               <p>
-                ?? + ??
-              </p>
+                Implement the Events section and the Details section, including their dark mode, both Arabic and English
+                language support, and their appropriate design. </p>
             </div>
           </div>
         </div>

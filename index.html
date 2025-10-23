@@ -59,18 +59,45 @@
                 <a class="nav-link" href="./about.html">عنا</a>
               </li>
             </ul>
+            <div class="d-flex justify-content-around align-items-center">
+
+              <button id="toggleBtn" class="py-auto me-3 border border-0 lang-btn lang-btn">
+                <img src="./assets/img/EN.webp" alt="EN" style="max-height: 2rem;">
+              </button>
+
+              <div class="form-check form-switch me-3 ">
+                <input class="form-check-input" type="checkbox" id="theme-toggle" style="transform: scale(1.5);">
+                <label class="form-check-label" for="theme-toggle">
+                  <i class="fas fa-sun"></i>
+                </label>
+              </div>
+            </div>
+
           </div>
 
 
-          <button id="toggleBtn" class=" py-auto py-auto me-3 border border-0 lang-btn lang-btn">
-            <img src="./assets/img/EN.webp" alt="EN" style="max-height: 2rem;">
-          </button>
 
-          <button id="theme-toggle" class="btn btn-outline-secondary me-3">
-            <i class="fas fa-sun"></i>
-          </button>
         </div>
       </nav>
+
+      <section class="team-preview py-3 bg-light">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-8 text-center">
+              <div class="d-flex flex-wrap justify-content-center gap-3 mb-2">
+                <h5 class="mb-2">فريق فعالياتك</h5>
+                <span class="badge name-tag p-2">fouad_235163</span>
+                <span class="badge name-tag p-2">abdullah_285176</span>
+                <span class="badge name-tag p-2">wessam_237869</span>
+                <a href="./about.html#testimonials" class="btn btn-sm btn-outline-primary">
+                  تعرف على الفريق <i class="fas fa-arrow-left ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </header>
     <main>
       <!-- slider -->
@@ -174,35 +201,35 @@
 
           <div class="my-5 d-flex justify-content-around flex-wrap">
             <!-- categories name -->
-            <div id="all" class="categorie-container d-flex justify-content-center">
+            <div id="all_ar" class="categorie-container d-flex justify-content-center">
               <div
                 class="categorie btn-links btn btn-outline-dark d-flex flex-column align-items-center justify-content-evenly p-4 rounded-circle">
                 <i class="fa-solid fa-calendar-days fa-2xl"></i>
                 <span>جميع الفعاليات</span>
               </div>
             </div>
-            <div id="music" class="activecategorie-container d-flex justify-content-center">
+            <div id="music_ar" class="activecategorie-container d-flex justify-content-center">
               <div
                 class="categorie btn-links btn btn-outline-dark d-flex flex-column align-items-center justify-content-evenly p-4 rounded-circle">
                 <i class="fa-solid fa-music fa-2xl"></i>
                 <span>الموسيقى</span>
               </div>
             </div>
-            <div id="culture" class="categorie-container d-flex justify-content-center">
+            <div id="culture_ar" class="categorie-container d-flex justify-content-center">
               <div
                 class="categorie btn-links btn btn-outline-dark d-flex flex-column align-items-center justify-content-evenly p-4 rounded-circle">
                 <i class="fa-solid fa-users-rays fa-2xl"></i>
                 <span>ثقافة</span>
               </div>
             </div>
-            <div id="sport" class="categorie-container d-flex justify-content-center">
+            <div id="sport_ar" class="categorie-container d-flex justify-content-center">
               <div
                 class="categorie btn-links btn btn-outline-dark d-flex flex-column align-items-center justify-content-evenly p-4 rounded-circle">
                 <i class="fa-solid fa-medal fa-2xl"></i>
                 <span>رياضة</span>
               </div>
             </div>
-            <div id="family" class="categorie-container d-flex justify-content-center">
+            <div id="family_ar" class="categorie-container d-flex justify-content-center">
               <div
                 class="categorie btn-links btn btn-outline-dark d-flex flex-column align-items-center justify-content-evenly p-4 rounded-circle">
                 <i class="fa-solid fa-people-group fa-2xl"></i>
@@ -212,7 +239,7 @@
           </div>
 
           <!-- categories cards -->
-          <div id="cardsContainer" class="row py-5 m-auto">
+          <div id="cardsContainer_ar" class="row py-5 m-auto">
             <div class="card-deck">
               <!-- Cards will be dynamically inserted here -->
 
@@ -394,7 +421,6 @@
         </button>
       </section>
     </footer>
-    <script src="./assets/js/home.js"></script>
   </div>
 
   <div class="english d-none" id="englishSection">
@@ -426,19 +452,37 @@
                 <a class="nav-link" href="./about.html">About</a>
               </li>
             </ul>
+            <div class="d-flex justify-content-around align-items-center">
+              <button id="toggleBtn" class="py-auto border border-0 lang-btn px-3">
+                <img src="./assets/img/AR.webp" alt="AR" style="max-height: 2rem;">
+              </button>
+              <div class="form-check form-switch ">
+                <input class="form-check-input" type="checkbox" id="theme-toggleEN" style="transform: scale(1.5);">
+                <label class="form-check-label" for="theme-toggleEN">
+                  <i class="fas fa-sun"></i>
+                </label>
+              </div>
+            </div>
           </div>
-          <button id="theme-toggle" class="btn btn-outline-secondary me-auto">
-            <i class="fas fa-sun"></i>
-          </button>
-
-
-
-          <button id="toggleBtn" class="py-auto me-3 border border-0 lang-btn">
-            <img src="./assets/img/AR.webp" alt="AR" style="max-height: 2rem;">
-          </button>
-
         </div>
       </nav>
+      <section class="team-preview py-3 bg-light">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-8 text-center">
+              <div class="d-flex flex-wrap justify-content-center gap-3 mb-2">
+                <h5 class="mb-2">The Team</h5>
+                <span class="badge name-tag p-2">fouad_235163</span>
+                <span class="badge name-tag p-2">abdullah_285176</span>
+                <span class="badge name-tag p-2">wessam_237869</span>
+                <a href="./about.html#testimonials" class="btn btn-sm btn-outline-primary">
+                  learn more about the team<i class="fas fa-arrow-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
     <main>
       <!-- Slider -->
@@ -756,17 +800,18 @@
           </svg>
         </div>
 
-        <button type="button" class="btn btn-floating btn-lg rounded-circle" id="btn-back-to-top">
+        <button type="button" class="btn btn-floating btn-lg rounded-circle" id="btn-back-to-top-en">
           <i class="fas fa-arrow-up"></i>
         </button>
       </section>
     </footer>
 
-    <script  src="./assets/js/homeEN.js"></script>
   </div>
 
 
+  <script src="./assets/js/home.js"></script>
   <script src="./assets/js/index.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
     crossorigin="anonymous"></script>

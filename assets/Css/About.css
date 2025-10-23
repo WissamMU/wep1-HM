@@ -18,7 +18,7 @@
   --transition-delay: 0.5s;
   --padding-top-bottom: 100px 0;
 
-  
+
 }
 
 body.dark {
@@ -31,9 +31,9 @@ body.dark {
   --main-color: #4da6ff;
   /* Slightly brighter for dark */
   --main-color-alt: #3399ff;
+  --color-inverse: #e0e0e0;
+  --black: #1a1a1a;
 
-  --color-inverse: white;
-  --black: black;
 }
 
 body {
@@ -185,6 +185,12 @@ details {
   -o-border-radius: 6px;
 }
 
+.english .testimonials .box img {
+  left: 80%;
+
+
+}
+
 .testimonials .box img {
   position: absolute;
   left: -10px;
@@ -203,6 +209,11 @@ details {
   margin: 0 0 10px;
 }
 
+.testimonials .box p {
+  margin: 0 0 10px;
+  color: #2d2d2d;
+}
+
 .testimonials .title {
   display: block;
   margin-bottom: 10px;
@@ -217,17 +228,93 @@ details {
   margin-bottom: 0;
 }
 
+/* Add this to your existing CSS */
+
+.policy {
+  background-color: var(--background-color-heavy);
+}
+
+/* Dark Mode Styles for Accordion */
+body.dark .accordion-item {
+  background-color: var(--background-color-mid);
+  border: 1px solid var(--background-color-heavy);
+}
+
+body.dark .accordion-button {
+  background-color: var(--background-color-mid);
+  color: var(--text-color);
+  border: none;
+}
+
+body.dark .accordion-button:not(.collapsed) {
+  background-color: var(--main-color);
+  color: white;
+}
+
+body.dark .accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(77, 166, 255, 0.25);
+  border-color: var(--main-color);
+}
+
+body.dark .accordion-body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+body.dark .accordion-body ol li {
+  color: var(--text-color);
+}
+
+body.dark .accordion-body p {
+  color: var(--text-color);
+}
+
+/* Accordion Item Specific Styles */
+body.dark .accordion-item:nth-child(1) .accordion-button:not(.collapsed) {
+  background-color: var(--main-color);
+}
+
+body.dark .accordion-item:nth-child(2) .accordion-button:not(.collapsed) {
+  background-color: var(--main-color-alt);
+}
+
+body.dark .accordion-item:nth-child(3) .accordion-button:not(.collapsed) {
+  background-color: #4CAF50;
+  /* Green for notes */
+}
+
+/* Hover Effects */
+body.dark .accordion-button:hover {
+  background-color: var(--background-color-heavy);
+  color: var(--text-color);
+}
+
+/* Transition for smooth mode change */
+.accordion-item,
+.accordion-button,
+.accordion-body {
+  transition: all var(--transition-delay) ease;
+}
+
 @media (max-width: 768px) {
-    html {
-        font-size: 14px; /* Smaller base font size for mobile */
-    }
-    .about-us p {
-        font-size: 1rem; /* 14px on mobile */
-    }
-    .about-us h3, .about-us h4 {
-        font-size: 1.3rem; /* 18.2px on mobile */
-    }
-    .about-us h5 {
-        font-size: 1.1rem; /* 15.4px on mobile */
-    }
+  html {
+    font-size: 14px;
+    /* Smaller base font size for mobile */
+  }
+
+  .about-us p {
+    font-size: 1rem;
+    /* 14px on mobile */
+  }
+
+  .about-us h3,
+  .about-us h4 {
+    font-size: 1.3rem;
+    /* 18.2px on mobile */
+  }
+
+  .about-us h5 {
+    font-size: 1.1rem;
+    /* 15.4px on mobile */
+  }
 }

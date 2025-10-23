@@ -19,6 +19,22 @@
   --padding-top-bottom: 100px 0;
 }
 
+
+body.dark {
+  --text-color: #303030;
+  /* Dark mode text */
+  --text-color-inverse: #303030;
+  --background-color: #5e5e5e;
+  --background-color-mid: #1a1a1a;
+  --background-color-heavy: #e0e0e0;
+  --main-color: #4da6ff;
+  /* Slightly brighter for dark */
+  --main-color-alt: #3399ff;
+
+  --color-inverse: #e0e0e0;
+  --black: #1a1a1a;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -32,7 +48,9 @@ body {
   direction: ltr;
 }
 
-body .english{direction:ltr}
+body .english {
+  direction: ltr
+}
 
 
 
@@ -103,15 +121,23 @@ section.footer .wave .shape-fill {
   color: var(--main-color);
 }
 
-.navbar .lang-btn{
+.navbar .lang-btn {
   background-color: var(--background-color);
 }
+
+.team-preview {
+  background-color: var(--background-color-heavy) !important;
+}
+.team-preview .badge {
+  background-color: var(--main-color);
+}
+
 
 /* slider */
 
 .section-title {
   color: var(--main-color);
-    text-shadow: 1px 1px 2px black;
+  text-shadow: 1px 1px 2px black;
 
 }
 
@@ -171,11 +197,22 @@ section.footer .wave .shape-fill {
 
 .carousel-container .carousel-control-next {
   right: 95%;
+  left: auto;
 }
 
 .carousel-container .carousel-control-prev {
   left: 95%;
   right: auto;
+}
+
+body .english .carousel-container .carousel-control-next {
+  left: 95%;
+  right: auto;
+}
+
+body .english .carousel-container .carousel-control-prev {
+  right: 95%;
+  left: auto;
 }
 
 .carousel-container .carousel-control-prev,
@@ -225,111 +262,103 @@ section.footer .wave .shape-fill {
   font-weight: 500;
 }
 
-/* Music */
-#all {
+
+
+/* All Categories (Arabic and English) */
+#all, #all_ar {
   border-color: #95f57e;
 }
 
-#all i {
+#all i, #all_ar i {
   color: #95f57e;
 }
 
-#all:hover,
-#all.active {
+#all:hover, #all.active, #all_ar:hover, #all_ar.active {
   background-color: #95f57e;
   border-radius: 50%;
 }
 
-#all:hover i,
-#all.active i {
-  color: #50ad38;
+#all:hover i, #all.active i, #all_ar:hover i, #all_ar.active i {
+  color: #1a6608;
 }
 
-/* Music */
-#music {
+/* Music (Arabic and English) */
+#music, #music_ar {
   border-color: #CDC1FF;
 }
 
-#music i {
+#music i, #music_ar i {
   color: #CDC1FF;
 }
 
-#music:hover,
-#music.active {
+#music:hover, #music.active, #music_ar:hover, #music_ar.active {
   background-color: #CDC1FF;
   border-radius: 50%;
 }
 
-#music:hover i,
-#music.active i {
+#music:hover i, #music.active i, #music_ar:hover i, #music_ar.active i {
   color: blue;
 }
 
-/* Culture */
-#culture {
+/* Culture (Arabic and English) */
+#culture, #culture_ar {
   border-color: #9DC08B;
 }
 
-#culture i {
+#culture i, #culture_ar i {
   color: #9DC08B;
 }
 
-#culture:hover,
-#culture.active {
+#culture:hover, #culture.active, #culture_ar:hover, #culture_ar.active {
   background-color: #9DC08B;
   border-radius: 50%;
 }
 
-#culture:hover i,
-#culture.active i {
+#culture:hover i, #culture.active i, #culture_ar:hover i, #culture_ar.active i {
   color: #68edcb;
 }
 
-/* Sport */
-#sport {
+/* Sport (Arabic and English) */
+#sport, #sport_ar {
   border-color: #E84545;
 }
 
-#sport i {
+#sport i, #sport_ar i {
   color: #E84545;
 }
 
-#sport:hover,
-#sport.active {
+#sport:hover, #sport.active, #sport_ar:hover, #sport_ar.active {
   background-color: #E84545;
   border-radius: 50%;
 }
 
-#sport:hover i,
-#sport.active i {
+#sport:hover i, #sport.active i, #sport_ar:hover i, #sport_ar.active i {
   color: #ffced9;
 }
 
-/* Family */
-#family {
+/* Family (Arabic and English) */
+#family, #family_ar {
   border-color: #b0d0ff;
 }
 
-#family i {
+#family i, #family_ar i {
   color: #b0d0ff;
 }
 
-#family:hover,
-#family.active {
+#family:hover, #family.active, #family_ar:hover, #family_ar.active {
   background-color: #b0d0ff;
   border-radius: 50%;
 }
 
-#family:hover i,
-#family.active i {
+#family:hover i, #family.active i, #family_ar:hover i, #family_ar.active i {
   color: #205295;
 }
 
+/* Focus state for accessibility */
 .categorie:focus {
   outline: 2px solid blue;
   outline-offset: 4px;
 }
-
 
 
 
@@ -352,6 +381,19 @@ section.footer .wave .shape-fill {
 
 
 /* First border-left-width setting is a fallback */
+
+body.dark .card-custom .card-footer,
+body.dark .card-custom .card-body{
+  background: var(--background-color-heavy) !important;
+}
+body.dark .card-custom-img,
+body.dark .card-custom-img::after {
+border-left-color: var(--background-color-heavy);
+}
+body.dark .card-custom p{
+  color: #1a1a1a !important;
+}
+
 
 .card-custom-img::after {
   position: absolute;
@@ -458,6 +500,7 @@ footer {
 
 
 
+#btn-back-to-top-en ,
 #btn-back-to-top {
   position: fixed;
   bottom: 20px;
@@ -493,4 +536,31 @@ footer {
     height: 50vh;
     min-height: 300px;
   }
+}
+
+/* تخصيص شكل الـ toggle */
+.form-check-input:checked {
+  background-color: #2196f3;
+  border-color: #2196f3;
+}
+
+.form-check-input:focus {
+  border-color: #2196f3;
+  box-shadow: 0 0 0 0.25rem rgba(33, 150, 243, 0.25);
+}
+
+.form-check-label {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Dark mode styles للـ toggle */
+body.dark .form-check-input {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+body.dark .form-check-input:checked {
+  background-color: #2196f3;
+  border-color: #2196f3;
 }

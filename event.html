@@ -49,7 +49,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav m-auto mb-2 mb-lg-0">
               <li class="nav-item ps-5">
-                <a class="nav-link" aria-current="page" href="./index.html">الرئيسية</a>
+                <a class="nav-link  " aria-current="page" href="./index.html">الرئيسية</a>
               </li>
               <li class="nav-item ps-5">
                 <a class="nav-link" href="./events.html">الفعاليات</a>
@@ -61,14 +61,24 @@
                 <a class="nav-link" href="./about.html">عنا</a>
               </li>
             </ul>
-            <button id="toggleBtn" class=" py-auto py-auto me-3 border border-0 lang-btn lang-btn">
-              <img src="./assets/img/EN.webp" alt="EN" style="max-height: 2rem;">
-            </button>
+            <div class="d-flex justify-content-around align-items-center">
 
-            <button id="theme-toggle" class="btn btn-outline-secondary me-3">
-              <i class="fas fa-sun"></i>
-            </button>
+              <button id="toggleBtn" class="py-auto me-3 border border-0 lang-btn lang-btn">
+                <img src="./assets/img/EN.webp" alt="EN" style="max-height: 2rem;">
+              </button>
+
+              <div class="form-check form-switch me-3 ">
+                <input class="form-check-input" type="checkbox" id="theme-toggle" style="transform: scale(1.5);">
+                <label class="form-check-label" for="theme-toggle">
+                  <i class="fas fa-sun"></i>
+                </label>
+              </div>
+            </div>
+
           </div>
+
+
+
         </div>
       </nav>
     </header>
@@ -155,8 +165,8 @@
                           </p>
                         </div>
                         <div class="info">
-                          <a href="">قراءة المزيد</a>
-                          <i class="fas fa-long-arrow-alt-right"></i>
+                          <a class="me-3" href="">أضف  للتقويم</a>
+                          <i class="fa-solid fa-share-from-square"></i>
                         </div>
                       </div>
                       <div class="box">
@@ -171,8 +181,8 @@
                           </p>
                         </div>
                         <div class="info">
-                          <a href="">قراءة المزيد</a>
-                          <i class="fas fa-long-arrow-alt-right"></i>
+                          <a class="me-3" href="">أضف  للتقويم</a>
+                          <i class="fa-solid fa-share-from-square"></i>
                         </div>
                       </div>
                       <div class="box">
@@ -188,8 +198,8 @@
                           </p>
                         </div>
                         <div class="info">
-                          <a href="">قراءة المزيد</a>
-                          <i class="fas fa-long-arrow-alt-right"></i>
+                          <a class="me-3" href="">أضف  للتقويم</a>
+                          <i class="fa-solid fa-share-from-square"></i>
                         </div>
                       </div>
                       <div class="box">
@@ -203,8 +213,8 @@
                           </p>
                         </div>
                         <div class="info">
-                          <a href="">قراءة المزيد</a>
-                          <i class="fas fa-long-arrow-alt-right"></i>
+                          <a class="me-3" href="">أضف  للتقويم</a>
+                          <i class="fa-solid fa-share-from-square"></i>
                         </div>
                       </div>
                       <div class="box">
@@ -219,8 +229,8 @@
                           </p>
                         </div>
                         <div class="info">
-                          <a href="">قراءة المزيد</a>
-                          <i class="fas fa-long-arrow-alt-right"></i>
+                          <a class="me-3" href="">أضف  للتقويم</a>
+                          <i class="fa-solid fa-share-from-square"></i>
                         </div>
                       </div>
                       <div class="box">
@@ -235,8 +245,8 @@
                           </p>
                         </div>
                         <div class="info">
-                          <a href="">قراءة المزيد</a>
-                          <i class="fas fa-long-arrow-alt-right"></i>
+                          <a class="me-3" href="">أضف  للتقويم</a>
+                          <i class="fa-solid fa-share-from-square"></i>
                         </div>
                       </div>
                       <div class="box">
@@ -253,8 +263,8 @@
                           </p>
                         </div>
                         <div class="info">
-                          <a href="">قراءة المزيد</a>
-                          <i class="fas fa-long-arrow-alt-right"></i>
+                          <a class="me-3" href="">أضف  للتقويم</a>
+                          <i class="fa-solid fa-share-from-square"></i>
                         </div>
                       </div>
                       <div class="box">
@@ -271,8 +281,8 @@
                           </p>
                         </div>
                         <div class="info">
-                          <a href="">قراءة المزيد</a>
-                          <i class="fas fa-long-arrow-alt-right"></i>
+                          <a class="me-3" href="">أضف  للتقويم</a>
+                          <i class="fa-solid fa-share-from-square"></i>
                         </div>
                       </div>
                     </div>
@@ -352,36 +362,40 @@
       <!-- navbar  -->
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="logo me-3" href="./index.html">Your Events</a>
+          <a class="logo ms-3" href="./index.html">Your Events</a>
+
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-              <li class="nav-item ps-5">
-                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+              <li class="nav-item pe-5">
+                <a class="nav-link " aria-current="page" href="./index.html">Home</a>
               </li>
-              <li class="nav-item ps-5">
+              <li class="nav-item pe-5">
                 <a class="nav-link" href="./events.html">Events</a>
               </li>
-              <li class="nav-item ps-5">
+              <li class="nav-item pe-5">
                 <a class="nav-link" href="./contact.html">Contact Us</a>
               </li>
-              <li class="nav-item ps-5">
-                <a class="nav-link" href="./about.html">About Us</a>
+              <li class="nav-item pe-5">
+                <a class="nav-link" href="./about.html">About</a>
               </li>
             </ul>
-
-            <button id="toggleBtn" class="py-auto me-3 border border-0 lang-btn">
-              <img src="./assets/img/AR.webp" alt="AR" style="max-height: 2rem;">
-            </button>
-            <button id="theme-toggle" class="btn btn-outline-secondary me-3">
-              <i class="fas fa-sun"></i>
-            </button>
+            <div class="d-flex justify-content-around align-items-center">
+              <button id="toggleBtn" class="py-auto border border-0 lang-btn px-3">
+                <img src="./assets/img/AR.webp" alt="AR" style="max-height: 2rem;">
+              </button>
+              <div class="form-check form-switch ">
+                <input class="form-check-input" type="checkbox" id="theme-toggleEN" style="transform: scale(1.5);">
+                <label class="form-check-label" for="theme-toggleEN">
+                  <i class="fas fa-sun"></i>
+                </label>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
@@ -472,8 +486,8 @@
               </p>
             </div>
             <div class="info">
-              <a href="">Read More</a>
-              <i class="fas fa-long-arrow-alt-right"></i>
+              <a href="">Add to calendar</a>
+              <i class="fa-solid fa-share-from-square"></i>
             </div>
           </div>
           <div class="box">
@@ -489,8 +503,8 @@
               </p>
             </div>
             <div class="info">
-              <a href="">Read More</a>
-              <i class="fas fa-long-arrow-alt-right"></i>
+              <a href="">Add to calendar</a>
+              <i class="fa-solid fa-share-from-square"></i>
             </div>
           </div>
           <div class="box">
@@ -505,8 +519,8 @@
               </p>
             </div>
             <div class="info">
-              <a href="">Read More</a>
-              <i class="fas fa-long-arrow-alt-right"></i>
+              <a href="">Add to calendar</a>
+              <i class="fa-solid fa-share-from-square"></i>
             </div>
           </div>
           <div class="box">
@@ -522,8 +536,8 @@
               </p>
             </div>
             <div class="info">
-              <a href="">Read More</a>
-              <i class="fas fa-long-arrow-alt-right"></i>
+              <a href="">Add to calendar</a>
+              <i class="fa-solid fa-share-from-square"></i>
             </div>
           </div>
           <div class="box">
@@ -539,8 +553,8 @@
               </p>
             </div>
             <div class="info">
-              <a href="">Read More</a>
-              <i class="fas fa-long-arrow-alt-right"></i>
+              <a href="">Add to calendar</a>
+              <i class="fa-solid fa-share-from-square"></i>
             </div>
           </div>
           <div class="box">
@@ -554,8 +568,8 @@
               </p>
             </div>
             <div class="info">
-              <a href="">Read More</a>
-              <i class="fas fa-long-arrow-alt-right"></i>
+              <a href="">Add to calendar</a>
+              <i class="fa-solid fa-share-from-square"></i>
             </div>
           </div>
           <div class="box">
@@ -571,8 +585,8 @@
               </p>
             </div>
             <div class="info">
-              <a href="">Read More</a>
-              <i class="fas fa-long-arrow-alt-right"></i>
+              <a href="">Add to calendar</a>
+              <i class="fa-solid fa-share-from-square"></i>
             </div>
           </div>
           <div class="box">
@@ -588,8 +602,8 @@
               </p>
             </div>
             <div class="info">
-              <a href="">Read More</a>
-              <i class="fas fa-long-arrow-alt-right"></i>
+              <a href="">Add to calendar</a>
+              <i class="fa-solid fa-share-from-square"></i>
             </div>
           </div>
         </div>
