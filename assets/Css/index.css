@@ -103,6 +103,10 @@ section.footer .wave .shape-fill {
   color: var(--main-color);
 }
 
+.navbar .lang-btn{
+  background-color: var(--background-color);
+}
+
 /* slider */
 
 .section-title {
